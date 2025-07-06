@@ -46,3 +46,40 @@
     --text-heading: #F9F9F9;
 }
 
+body {
+    background-color: var(--shape-background);
+    color: var(--text-body);
+    font: var(--text-body-md);
+}
+
+h1 {
+    color: var(--pink);
+    font: var(--text-logo);
+}
+
+h2 {
+    color: var(--text-heading);
+    font: var(--text-heading-md);
+}
+
+h3 {
+    color: var(--text-heading);
+    font: var(--text-heading-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}

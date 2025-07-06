@@ -12,6 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="app" class="border">
+        <aside>
+            <div class="aside-container">
+                <img src="./assets/Background.png" alt="Imagem de uma fatia de bolo">
+                <div class="title">
+                    <img src="./assets/Logo.svg" alt="Logo">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+
+                <form>
+                    <fieldset class="about-event">
+                        <legend class="flex">
+                            <img src="./assets/icons/calendar.svg" alt="Ícone de calendario">
+                            <h3>Sobre o evento</h3>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="name-event">Título</label>
+                            <input type="text" id="name-event" name="name-event" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="start-end flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="start-event">Início</label>
+                                <input type="datetime" id="start-event" name="start-event" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="end-event">Fim</label>
+                                <input type="datetime" id="end-event" name="end-event" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+                        </div>
+
+                        <div class="type-location flex">
+                            <div class="input-wrapper flex-1">
+                                <label>Tipo</label>
+                                <div class="toggle-buttons flex">
+                                    <button class="flex flex-1 btn-primary">
+                                        <img src="./assets/icons/building.svg" alt="">
+                                        <span>Presencial</span>
+                                    </button>
+
+                                    <button class="flex flex-1 btn-secondary">
+                                        <img src="./assets/icons/video.svg" alt="">
+                                        <span>Online</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="location">Local</label>
+                                <input type="text" id="location" name="location" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper flex">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
