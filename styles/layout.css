@@ -3,12 +3,11 @@
     grid-template-columns: 31.25% 68.75%;
     gap: 1.25rem;
     
-
+    overflow: hidden;
     max-width: 80rem;
     margin: 0 auto;
     padding: 1.25rem;
     height: 100vh;
-    overflow: hidden;
 }
 
 
@@ -47,5 +46,6 @@ main {
     background-color: var(--shape-body);
     border-radius: 0.75rem;
 
+    overflow: auto;
     padding: 5rem 8.125rem;
 }

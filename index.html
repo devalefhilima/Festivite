@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app" class="border">
+    <div id="app">
         <aside>
             <div class="aside-container">
                 <img src="./assets/Background.png" alt="Imagem de uma fatia de bolo">
@@ -77,6 +77,119 @@
                         <div class="textarea-wrapper flex">
                             <label for="description">Descrição</label>
                             <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="customization">
+                        <legend class="flex">
+                            <img src="./assets/icons/paintbrush.svg" alt="Ícone de pincel">
+                            <h3>Personalização</h3>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="main-color">Cor principal</label>
+                            <div class="customization-wrapper flex">
+                                <input type="radio" name="main-color" id="main-color" class="brand-light">  
+                                <input type="radio" name="main-color" id="main-color" class="navy">
+                                <input type="radio" name="main-color" id="main-color" class="purple">
+                                <input type="radio" name="main-color" id="main-color" class="fuschia">
+                                <input type="radio" name="main-color" id="main-color" class="pink" checked>
+                                <input type="radio" name="main-color" id="main-color" class="danger">
+                                <input type="radio" name="main-color" id="main-color" class="orange">
+                                <input type="radio" name="main-color" id="main-color" class="yellow">
+                                <input type="radio" name="main-color" id="main-color" class="lime">
+                                <input type="radio" name="main-color" id="main-color" class="green">
+                                <input type="radio" name="main-color" id="main-color" class="cyan">
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="theme">Tema do evento</label>
+                            <div class="theme-itens flex">
+                                <div class="item active">
+                                    <img src="./assets/image/Image.png" alt="">
+                                    <p>Aniversário</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-2.png" alt="">
+                                    <p>Infantil</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-3.png" alt="">
+                                    <p>Formatura</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-4.png" alt="">
+                                    <p>Casamento</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-5.png" alt="">
+                                    <p>Chá de bebê</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-6.png" alt="">
+                                    <p>Chá de panela</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-7.png" alt="">
+                                    <p>Carnaval</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-8.png" alt="">
+                                    <p>Páscoa</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-9.png" alt="">
+                                    <p>São João</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-10.png" alt="">
+                                    <p>Halloween</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-11.png" alt="">
+                                    <p>Natal</p>
+                                </div>
+
+                                <div class="item">
+                                    <img src="./assets/image/Image-12.png" alt="">
+                                    <p>Outro</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div class="other-input flex">
+                                <div class="input-group flex-2">
+                                    <label class="group-label">Estilo</label>
+                                    <label class="toggle-label">
+                                        <input type="checkbox" class="toggle-input"/>
+                                        <span class="toggle-slider"></span>
+                                        <span class="label-text">Escuro</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-group flex-1">
+                                    <label class="group-label">Foto de capa</label>
+                                    <label for="file-upload" class="file-label flex">
+                                        <div class="input-file flex">
+                                            <input type="file" id="file-upload" hidden/>
+                                            <img src="./assets/icons/upload.svg" alt=""> Selecionar
+                                        </div>
+                                        <span class="file-name">Nenhum arquivo selecionado</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                 </form>
